@@ -1,6 +1,6 @@
 .client{
     display: flex;
-    
+    justify-content: center;
     flex-wrap: wrap;
     list-style: none;
     margin: -15px;
@@ -32,9 +32,9 @@
 .client__item{
     flex-basis: calc((100% / 15px) / 4);
     margin: 15px;
-    &:last-child{
-    margin-right: 0;
-    }
+    // &:last-child{
+    // margin-right: 0;
+    // }
 }
 @media screen {
     
