@@ -2,19 +2,21 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet"/>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" rel="stylesheet"/>
     <link rel="stylesheet" href="./css/main.min.css"/>
 </head>
 <body>
-    <!-- ===========шапка начало=========== -->
+    <!-- ===========шапка начало page-header=========== -->
     <header class="page-header">
         <div class="page-header__nav contener">
-            <nav class="nav">      
-                <a href="./index.html" class="nav__logo"> 
-                    <span class="nav__logo-web">Web</span>Studio
+                <a href="./index.html" class="page-header__logo"> 
+                    <span class="page-header__logo-web">Web</span>Studio
                 </a>
+                <div class="page-header__box">
+                <nav class="nav">
                 <ul class="site-nav">
                     <li class="site-nav__item"><a class="site-nav__link site-nav__link--current" href="./index.html" >Студия</a></li>
                     <li class="site-nav__item"><a class="site-nav__link" href="./portfolio.html" >Портфолио</a></li>
@@ -33,6 +35,7 @@
                         </svg>
                         +38 096 111 11 11</a></li>
                 </ul>
+            </div>
         </div>
     </header> 
     <!-- ===========шапка конец=========== -->
@@ -49,8 +52,8 @@
     <!-- ===========Секция special начало=========== -->
         <section class="special-section">
             <!--скрытый заголовок-->
-            <h2 class="special-section_title special-section_title-hidden">Особенности</h2>
             <div class="contener">
+            <h2 class="special-section_title special-section_title-hidden">Особенности</h2>
                 <ul class="features">
                 <li class="features__item">
                     <div class="features__box">
@@ -91,7 +94,7 @@
             </ul>
         </div>
         </section>
-        <section class="section">
+        <section class="section section__box">
         <div class="contener">
         <h2 class="special-section_title">Чем мы занимаемся</h2>
         <ul class="section__list">
@@ -131,7 +134,7 @@
         <ul class="team">
             <li class="team__item">
                 <div class="team__image">
-                    <img src="./images/imgc.jpg" alt="мужчина в очках с бородой темная рубажка" width="270" />
+                    <img src="./images/imgc.jpg" alt="мужчина в очках с бородой темная рубажка" />
                 </div>
                 <div class="team__content">
                 <h3 class="team__title">Игорь Демьяненко</h3>
@@ -171,7 +174,7 @@
             </li>
             <li class="team__item">
                 <div class="team__image">
-                    <img src="./images/imgd.jpg" alt="женщина в очках" width="270"/>
+                    <img src="./images/imgd.jpg" alt="женщина в очках"/>
                 </div>
                 <div class="team__content">
                     <h3 class="team__title">Ольга Репина</h3>
@@ -180,7 +183,7 @@
                         <li class="team__items">
                             <a href="" class="team__link" aria-label="instagram">
                                 <svg class="team__icon">
-                                    <use class="ii" href="./images/symbol-defs.svg#icon-foto"></use>
+                                    <use href="./images/symbol-defs.svg#icon-foto"></use>
                                 </svg>
                             </a>
                         </li>
@@ -211,7 +214,7 @@
             </li>
             <li class="team__item">
                 <div class="team__image">
-                    <img src="./images/imgi.jpg" alt="мужчина с бородой светлая рубажка" width="270" />
+                    <img src="./images/imgi.jpg" alt="мужчина с бородой светлая рубажка" />
                 </div>
                 <div class="team__content">
                 <h3 class="team__title">Николай Тарасов</h3>
@@ -251,7 +254,7 @@
             </li>
             <li class="team__item">
                 <div class="team__image">
-                    <img src="./images/imgf.jpg" alt="мужчина в очках с бородой черная футболка" width="270" />
+                    <img src="./images/imgf.jpg" alt="мужчина в очках с бородой черная футболка" />
                 </div>
                 <div class="team__content">
                 <h3 class="team__title">Михаил Ермаков</h3>
@@ -466,8 +469,8 @@
                 <li class="modal-panel__li">
                     <label class="modal-panel__label modal-panel__label--consent" >
                         <input class="modal-panel__consent" type="checkbox" name="consent">
-                        <span class="modal-panel__consenticon"></span>
-                        Соглашаюсь с рассылкой и принимаю  <span class="modal-panel__consentspan"> Условия договора</span>
+                        <!-- <span class="modal-panel__consenticon"></span>
+                        Соглашаюсь с рассылкой и принимаю  <span class="modal-panel__consentspan"> Условия договора</span> -->
                     </label>
                     
                 </li>
