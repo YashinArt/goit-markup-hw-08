@@ -15,7 +15,13 @@
                 <a href="./index.html" class="page-header__logo"> 
                     <span class="page-header__logo-web">Web</span>Studio
                 </a>
-                <div class="page-header__box">
+                <button class="page-header__button is-open" type="button" aria-expanded="false" date-menu-button>
+                    <svg class="page-header__icon" aria-label="Переключатель мибильного меню">
+                        <use class="page-header__menu" href="./images/symbol-mobile.svg#icon-menu"></use>
+                        <use class="page-header__close" href="./images/symbol-mobile.svg#icon-close"></use>
+                    </svg>
+                </button>
+                <div class="page-header__box" data-menu>
                 <nav class="nav">
                 <ul class="site-nav">
                     <li class="site-nav__item"><a class="site-nav__link site-nav__link--current" href="./index.html" >Студия</a></li>
@@ -497,5 +503,6 @@
 </script>
 <!-- модальное окно-->
 <script src="./js/modal.js"></script>
+<script src="./js/mobile.js"></script>
 </body>
 </html>
