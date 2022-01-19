@@ -16,6 +16,13 @@
         padding-bottom: 94px;
         z-index: 2;
     }
+    @media screen and (min-width:768px){
+        padding-left: 159px;
+        padding-top: 208px;  
+        padding-right: 159px;
+        padding-bottom: 207px;
+        z-index: 2;
+    }
 }
 .backdrop.is-hidden{
     opacity: 0;
@@ -32,11 +39,20 @@
     border-radius: 4px;
     
     @media screen and (min-width:768px) {
+       position: relative;
+        min-width: 450px;
+        min-height: 609px;
+    }
+    @media screen and (min-width:1200px) {
         position: absolute;
         top: 50%;
         left: 50%;
+        
         transform: translate(-50%, -50%);
+        min-width: 450px;
+        min-height: 609px;
     }
+    
 }
 .modal__button{
     position: absolute;
@@ -66,6 +82,10 @@
         top: 101px;
         right: 23px;
     }
+    @media screen and (min-width:768px) {
+        top: 8px;
+        right: 8px;
+    }
 }
 .modal__icon{
     width: 14px;
@@ -89,6 +109,10 @@
     margin-right: auto;
     padding: 40px;
     text-align: center;
+    @media screen and (min-width:768px){
+        width: 450px;
+        height: 609px;
+    }
 }
 .modal-panel__title{
     margin-bottom: 12px;
