@@ -12,14 +12,20 @@
     <!-- ===========шапка начало=========== -->
     <header class="page-header">
         <div class="page-header__nav contener">
-            <nav class="nav">      
-                <a href="./index.html" class="nav__logo"> 
-                    <span class="nav__logo-web">Web</span>Studio
+                <a href="./index.html" class="page-header__logo"> 
+                    <span class="page-header__logo-web">Web</span>Studio
                 </a>
-                <div class="page-header__box">
+                <button class="page-header__button is-open" type="button" aria-expanded="false" aria-controls="page-header__box" date-menu-button>
+                    <svg class="page-header__icon" aria-label="Переключатель мибильного меню">
+                        <use class="page-header__menu" href="./images/symbol-mobile.svg#icon-menu"></use>
+                        <use class="page-header__close" href="./images/symbol-mobile.svg#icon-close"></use>
+                    </svg>
+                </button>
+                <div class="page-header__box" id="page-header__box" data-menu>
+                <nav class="nav">
                 <ul class="site-nav">
-                    <li class="site-nav__item"><a class="site-nav__link" href="./index.html" >Студия</a></li>
-                    <li class="site-nav__item"><a class="site-nav__link site-nav__link--current" href="./portfolio.html" >Портфолио</a></li>
+                    <li class="site-nav__item"><a class="site-nav__link site-nav__link--current" href="./index.html" >Студия</a></li>
+                    <li class="site-nav__item"><a class="site-nav__link" href="./portfolio.html" >Портфолио</a></li>
                     <li class="site-nav__item"><a class="site-nav__link" href="" >Контакты</a></li>
                 </ul>
             </nav>
@@ -29,12 +35,33 @@
                             <use href="./images/symbol-defs.svg#icon-email"></use>
                         </svg>
                         info@devstudio.com</a></li>
-                    <li class="contact__item"><a href="tel:+380961111111" class="contact__link">
+                    <li class="contact__item"><a href="tel:+380961111111" class="contact__link contact__tel">
                         <svg class="contact__icons">
                             <use href="./images/symbol-defs.svg#icon-tel"></use>
                         </svg>
                         +38 096 111 11 11</a></li>
                 </ul>
+                <ul class="net">
+                    <li class="net__items">
+                        <a href="" class="net__link" aria-label="instagram">
+                            Instagram
+                        </a>
+                    </li>
+                    <li class="net__items">
+                        <a href="" class="net__link" aria-label="twitter">
+                            Twitter
+                        </a>
+                    </li>
+                    <li class="net__items">
+                        <a href="" class="net__link" aria-label="facebook">
+                            Facebook
+                        </a>
+                    </li>
+                    <li class="net__items">
+                        <a href="" class="net__link" aria-label="linkedin">
+                            LinkedIn
+                        </a>
+                    </li>
             </div>
         </div>
     </header> 
@@ -271,6 +298,6 @@
     
      </footer>
     <!-- ===========подвал конец=========== -->
-    
+    <script src="./js/mobile.js"></script>
     </body>
 </html>
