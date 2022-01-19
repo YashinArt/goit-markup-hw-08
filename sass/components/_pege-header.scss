@@ -38,6 +38,9 @@
     @media screen and (min-width:768px) {
     margin-right: 88px;
     }
+    @media screen and (min-width:1200px) {
+        margin-right: 93px;
+        }
 }
 .page-header__logo-web {
     color: $accent-text-color;
@@ -94,9 +97,11 @@
 
 // ----------------------
 .nav{
-  
-    // display: flex;
-    // align-items: center;
+    @media screen and (min-width:1200px){
+        display: flex;
+        align-items: center;
+    }
+    
 }
 .site-nav{
     // display: flex;
@@ -150,6 +155,7 @@
     &:focus {
     color: $accent-text-color;
 }
+    
 }
 .site-nav__link--current{
     position: relative;
