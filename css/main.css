@@ -95,7 +95,7 @@ img {
   padding: 0;
   border: none;
   background-color: transparent;
-  z-index: 1;
+  z-index: 2;
 }
 
 .page-header__button:focus, .page-header__button:hover {
@@ -131,6 +131,7 @@ img {
 
 .page-header__box.is-open {
   display: block;
+  z-index: 1;
 }
 
 @media screen and (max-width: 480px) {
@@ -741,10 +742,18 @@ img {
 }
 
 .footer__title {
-  margin-bottom: 20px;
+  font-size: 14px;
   line-height: 1.14;
+  margin-bottom: 20px;
   text-transform: uppercase;
   color: #FFFFFF;
+}
+
+@media screen and (min-width: 767px) {
+  .footer__title {
+    font-size: 14px;
+    line-height: 1.14;
+  }
 }
 
 .footer__list {
@@ -804,9 +813,18 @@ img {
 }
 
 .footer-sign__title {
+  font-size: 14px;
+  line-height: 1.14;
   margin-bottom: 20px;
   color: #FFFFFF;
   text-transform: uppercase;
+}
+
+@media screen and (min-width: 767px) {
+  .footer-sign__title {
+    font-size: 14px;
+    line-height: 1.14;
+  }
 }
 
 .footer-sign__form {
@@ -1174,13 +1192,24 @@ img {
           justify-content: center;
 }
 
-.project__item {
-  margin-left: 8px;
-  margin-bottom: 50px;
+@media screen and (max-width: 767px) {
+  .project__button {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
 }
 
-.project__item:first-child {
+.project__item {
+  margin-right: 8px;
+  margin-bottom: 15px;
+}
+
+.project__item:last-child {
   margin-left: 0;
+  margin-bottom: 40px;
 }
 
 .project__btn {
@@ -1216,16 +1245,32 @@ img {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   padding: 0;
-  margin-left: -30px;
-  margin-top: -30px;
   /* outline: 1px solid blue; */
 }
 
-.project__list {
-  -ms-flex-preferred-size: calc(100% / 3 - 30px);
-      flex-basis: calc(100% / 3 - 30px);
-  margin-left: 30px;
-  margin-top: 30px;
+@media screen and (min-width: 768px) {
+  .project {
+    margin-left: -30px;
+    margin-top: -30px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .project__list {
+    margin-bottom: 30px;
+  }
+  .project__list:last-child {
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .project__list {
+    -ms-flex-preferred-size: calc(100% / 3 - 30px);
+        flex-basis: calc(100% / 3 - 30px);
+    margin-left: 30px;
+    margin-top: 30px;
+  }
 }
 
 .project__link {
@@ -1247,6 +1292,16 @@ img {
 .project__imege {
   position: relative;
   overflow: hidden;
+}
+
+.project__imege img {
+  width: 370px;
+}
+
+@media screen and (max-width: 767px) {
+  .project__imege img {
+    width: 450px;
+  }
 }
 
 .project__tunbtext {
