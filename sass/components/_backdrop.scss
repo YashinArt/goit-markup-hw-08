@@ -49,8 +49,8 @@
         left: 50%;
         
         transform: translate(-50%, -50%);
-        min-width: 450px;
-        min-height: 609px;
+        min-width: 528px;
+        min-height: 581px;
     }
     
 }
@@ -112,6 +112,10 @@
     @media screen and (min-width:768px){
         width: 450px;
         height: 609px;
+    }
+    @media screen and (min-width:1200px){
+        width: 528px;
+        height: 581px;
     }
 }
 .modal-panel__title{
@@ -187,10 +191,12 @@
     line-height: 1.17;
     letter-spacing: 0.03em;
    
-        // margin-left: 13px;
-        // font-size: 14px;
-        // line-height: 1.71;
-    
+       
+    @media screen and (min-width:1200px){
+        margin-left: 13px;
+        font-size: 14px;
+        line-height: 1.71;
+    }
 }
 .modal-panel__consent{
     position: absolute;
