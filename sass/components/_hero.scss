@@ -3,10 +3,10 @@
     height: 400px;
     margin-left: auto;
     margin-right: auto;
-    background-image: linear-gradient(
-    rgba(47, 48, 58, 0.4),
-    rgba(47, 48, 58, 0.4)),
-    url(../images/bghero.jpg);
+    // background-image: linear-gradient(
+    // rgba(47, 48, 58, 0.4),
+    // rgba(47, 48, 58, 0.4)),
+    // url(../images/bghero.jpg);
     /* background-image: url(../images/bghero.jpg); */
     background-size: cover;
     background-repeat: no-repeat;
@@ -16,6 +16,54 @@
     padding-bottom: 118px;
     background-color: $background-hero-color;
     text-align: center;
+    @media screen and (max-width:767px) {
+        background-image: linear-gradient(
+    rgba(47, 48, 58, 0.4),
+    rgba(47, 48, 58, 0.4)),
+    url(../../images/mobile_480/bghero_480.jpg);
+    
+        @media (min-device-pixel-ratio: 2),
+            (-webkit-min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx){
+                background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)),
+        url(../../images/mobile_480/bghero_480@2x.jpg);
+            }
+    }
+    @media screen and (min-width:768px) {
+        background-image: linear-gradient(
+    rgba(47, 48, 58, 0.4),
+    rgba(47, 48, 58, 0.4)),
+    url(../../images/tablet_768/bghero_768.jpg);
+    
+        @media (min-device-pixel-ratio: 2),
+            (-webkit-min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx){
+                background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)),
+        url(../../images/tablet_768/bghero_768@2x.jpg);
+            }
+    }
+    @media screen and (min-width:1200px) {
+        background-image: linear-gradient(
+    rgba(47, 48, 58, 0.4),
+    rgba(47, 48, 58, 0.4)),
+    url(../../images/desktop_1200/bghero_1200.jpg);
+    
+        @media (min-device-pixel-ratio: 2),
+            (-webkit-min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx){
+                background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)),
+        url(../../images/desktop_1200/bghero_1200@2x.jpg);
+            }
+    }
 }
 .hero__title {
     margin-top: 0;
