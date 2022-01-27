@@ -13,6 +13,9 @@
     justify-content: space-between;
     padding-top: 16px;
     padding-bottom: 16px;
+    &.is-open{
+        position: fixed;
+    }
     }
 
 }
@@ -59,9 +62,11 @@
     }
     &.is-open .page-header__close{
         display: block;
+             
     }
     &.is-open .page-header__menu{
         display: none;
+        
     }
     @media screen and (min-width:768px) {
         display: none;
@@ -73,6 +78,7 @@
 .page-header__icon {
     width: 40px;
     height: 40px;
+    
 }
 .page-header__box{
        background-color: $hero-title-color;
